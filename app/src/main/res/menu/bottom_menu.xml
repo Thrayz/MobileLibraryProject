@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actualNews"
+        android:title="Home"
+        android:icon="@drawable/ic_news"/>
+    <item
+        android:id="@+id/booksList"
+        android:title="My Books"
+        android:icon="@drawable/ic_books"/>
+    <item
+        android:id="@+id/profile2"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"/>
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_3"/>
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Encapsulate the existing RelativeLayout within a LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Existing RelativeLayout -->
+        <RelativeLayout
+            android:id="@+id/news_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="NEWS">
+
+            <!-- Your existing views -->
+
+            <TextView
+                android:id="@+id/text_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Releases"
+                android:textSize="32dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/container_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_new"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:id="@+id/article_of_the_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/container_1"
+                android:text="Visit Our Website For More Books!"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/actualIMG"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+            android:layout_below="@id/article_of_the_day"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/articule"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

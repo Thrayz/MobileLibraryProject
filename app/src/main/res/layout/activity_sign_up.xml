@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    tools:context=".View.SignUp"
+    tools:targetApi="s">
+    <!-- Sign Up -->
+    <!-- Username -->
+    <TextView
+        android:id="@+id/text_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rectangle_1"
+        android:layout_centerInParent="true"
+        android:text="Sign Up"
+        android:textSize="36dp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:translationY="-15dp"
+        />
+
+    <Button
+        android:id="@+id/rectangle_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ellipse_2"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rectangle_2"
+        android:text="Log In"
+        android:textSize="15sp"
+        android:typeface="sans"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/et_user_name_2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:hint="Username"
+        android:elevation="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rectangle_1"
+        android:translationY="-50dp"
+        android:translationX="40dp"/>
+    <EditText
+        android:id="@+id/et_password_2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:hint="Password"
+        android:elevation="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rectangle_2"
+        android:translationY="-45dp"
+        android:translationX="40dp"/>
+    <EditText
+        android:id="@+id/et_user_name_3"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:hint="Email"
+        android:elevation="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rectangle_3"
+        android:translationY="-45dp"
+        android:translationX="40dp"/>
+
+    <Button
+        android:id="@+id/rectangle_1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rectangle_2"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/rectangle_1"
+        android:clickable="false"
+        android:drawableLeft="@drawable/ic_new_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Password -->
+    <Button
+        android:id="@+id/rectangle_3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rectangle_2"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/rectangle_1"
+        android:clickable="false"
+        android:drawableLeft="@drawable/ic_email"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/rectangle_2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_2"
+        android:clickable="false"
+        android:drawableLeft="@drawable/ic_password"
+        tools:ignore="MissingConstraints" />
+    <!-- Circle at the bottom behind -->
+    <View
+        android:id="@+id/ellipse_4"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circle2"
+        android:translationX="200dp"
+        android:translationY="120dp"
+        tools:ignore="MissingConstraints" />
+    <!-- Circle at the top behind -->
+    <View
+        android:id="@+id/ellipse_3"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:background="@drawable/circle2"
+        android:translationX="-150dp"
+        android:translationY="-150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-180dp"
+        tools:layout_editor_absoluteY="-100dp" />
+    <!-- Circle at the bottom front -->
+    <!-- Circle at the top front -->
+    <!-- Circle ready -->
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circle"
+        android:translationX="140dp"
+        android:translationY="190dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:background="@drawable/circle"
+        android:translationX="-20dp"
+        android:translationY="-200dp"
+        app:layout_anchor="@+id/ellipse_4"
+        app:layout_anchorGravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/ellipse_5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/rectangle_1"
+        android:layout_alignRight="@id/rectangle_3"
+        android:layout_marginTop="-9dp"
+        android:background="@drawable/circle3"
+        android:elevation="10dp"
+        android:translationX="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

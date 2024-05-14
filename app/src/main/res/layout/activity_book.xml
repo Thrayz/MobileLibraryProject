@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Book">
+
+    <Button
+        android:id="@+id/back_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1"
+        android:drawableLeft="@drawable/ic_back"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_2"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/back_1"
+        android:layout_centerInParent="true"
+        android:translationY="20dp" />
+
+    <ScrollView
+        android:id="@+id/des"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/imageView_2"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_4"
+        android:clickable="false"
+        android:translationY="40dp">
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:translationX="22dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_1"
+        android:text="Book"
+        android:textColor="@color/black"
+        android:translationY="80dp" />
+</RelativeLayout>

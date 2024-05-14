@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Reglament">
+
+    <Button
+        android:id="@+id/back_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1"
+        android:drawableLeft="@drawable/ic_back"
+        android:onClick="clickListener"
+        android:contentDescription="Go back to previous screen" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     1) Fifteen days after the expiration of the period of use of books and other printed materials, if renewal has not been made, and thirty days if renewal has been made,
+            \n the library staff must send a reminder or notify the reader by mail of the need to return them to the library within ten days.
+            \n If the books and other printed materials are not returned to the library within this period, the library sends a demand to the user for their return or replacement within 10 days with equivalent content and cost.
+                        \n     2) Users may be deprived of the right to use 'Pocket Library' for a specific or permanent period in the following cases:
+                        \n- in case of systematic violation of the library's deadlines for returning books without a valid reason;
+                        \n- in case of deliberate damage to the library's property;
+                        \n- in case of refusal of the user to compensate for the damage;
+                        \n- in case of unethical behavior of the user in the library, interfering with the activities of other users and library staff;
+                        \n- in case of refusal to voluntarily compensate the library for the damage, the user is responsible for the damage caused in accordance with the legislation of the Russian Federation.\n\n\n\n\n"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="30dp"
+            android:translationX="10dp" />
+    </ScrollView>
+</RelativeLayout>
